@@ -1,0 +1,120 @@
+header {
+    background: transparent;
+    padding: 45px 60px;
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row; /* расположили элементы горизонтально */
+    align-items: center; /* выровняли по центру элементы чтобы они не улетали вниз вверх и тд*/
+    justify-content: space-between; /* разделили каждую часть (лого - меню - корзина,войти) */
+}
+
+.logoContainer {
+    width: 96.77px;
+    height: 83px;
+}
+.logo {
+    display: inline-block;
+    width: 96.77px;
+    height: 83px;
+    background: url("../images/logo.png") no-repeat center center;
+    background-size: contain;
+}
+.logo:hover {
+    background-image: url("../images/logoHover.png");
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* убрали маркеры */
+    display: flex; /* горизонтальное расположение пунктов */
+    gap: 65px; /* расстояние между пунктами */
+    align-items: center;
+}
+.menu a {
+    font-size: 30px;
+    font-family: Golos, sans-serif;
+    color: white;
+    text-decoration: none; /* убираем нижнее подчеркивание*/
+}
+.menu a:hover {
+    color: #6300B1;
+}
+
+.actions {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.actions a {
+    text-decoration: none;
+    font-family: Golos, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.basket {
+    display:inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("../images/basket.png") no-repeat center center;
+    background-size: contain;
+}
+.basket:hover {
+    background-image: url("../images/basketHover.png");
+}
+
+.login-button {
+    border: 5px solid white;
+    padding: 13px 49px;
+    border-radius: 35px;
+}
+.login-button:hover {
+    color: #6300B1;
+    border-color: #6300B1;
+}
+
+.headerContainerMobile {
+    display: none;
+}
+
+
+
+@media (max-width: 360px) {
+    .headerContainer {
+        display: none;
+    }
+    header {
+        padding: 13px 16px;
+    }
+    .headerContainerMobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logoContainerMobile {
+        width: 36.09px;
+        height: 32.47px;
+    }
+    .logoMobile {
+        display: inline-block;
+        width: 36.09px;
+        height: 32.47px;
+        background: url("../imagesMobile/logoMobile.png") no-repeat center center;
+        background-size: contain;
+    }
+
+    .burgerBtnContainer {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+}

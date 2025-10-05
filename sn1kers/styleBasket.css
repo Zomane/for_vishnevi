@@ -1,0 +1,115 @@
+.basketSection {
+    padding-top: 173px;
+    padding-bottom: 60px;
+}
+
+#basket {
+    margin-top: 42px;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-family: Golos, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.basketContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.basketContainer button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.basketItem {
+    width: 1307px;
+    height: 256px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 38px 45px;
+    gap: 70px;
+}
+.basketItem>img {
+    width: 180px;
+    height: 156px;
+}
+
+.basketItemBio {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    justify-content: space-between;
+}
+
+.name\&sizeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.basketItemName {
+    font-size: 25px;
+    font-family: "Myriad Pro", serif;
+}
+.basketItemSize {
+    font-size: 20px;
+    font-family: Golos, sans-serif;
+}
+.basketItemCount {
+    font-size: 30px;
+    font-family: Golos, sans-serif;
+    font-weight: bold;
+}
+
+.crossButton {
+    position: absolute;
+    right: 35px;
+    top: 30px;
+}
+
+.quantity {
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    font-family: Golos, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity button {
+    width: 50px;
+    height: 50px;
+}
+
+.quantity>.quantityNumber {
+    font-weight: bold;
+    padding: 4px 16px;
+    text-align: center;
+}
+
+.finalPriceAndPayButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+
+.finalPrice {
+    font-family: Golos, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}

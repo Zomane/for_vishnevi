@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата заказа</title>
+    <link rel="stylesheet" href="stylesIndex/styleCardContainer.css">
+    <link rel="stylesheet" href="stylesIndex/styleMainContainer.css">
+    <link rel="stylesheet" href="stylesIndex/styleMenu.css">
+    <link rel="stylesheet" href="stylesIndex/styleReviewCard.css">
+    <link rel="stylesheet" href="styleBasket.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-files/favicon-16x16.png">
+    <link rel="manifest" href="favicon-files/site.webmanifest">
+    <link rel="stylesheet" href="styleOrderProcessing.css">
+    <link rel="stylesheet" href="styleOrderPayment.css">
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="logoContainer">
+                <a href="index.html" class="logo"></a>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="photo.html">Фото</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                    <li><a href="index.html#aboutCompany">О компании</a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <a href="shoppingCart.html" class="basket"></a>
+                <a href="#" class="login-button">Войти</a>
+            </div>
+
+        </div>
+
+        <div class="headerContainerMobile">
+            <div class="logoContainerMobile">
+                <a href="index.html" class="logoMobile"></a>
+            </div>
+
+            <div class="burgerBtnContainer">
+                <img src="imagesMobile/iconBurger.png" alt="burger">
+            </div>
+        </div>
+    </header>
+
+    <section class="orderPaymentSection">
+        <h2 id="orderPayment">Оплата заказа</h2>
+        <div class="orderPaymentContainer">
+            <div class="cardImages">
+                <img src="images/visa.png" alt="visa">
+                <img src="images/mastercard.png" alt="mastercard">
+                <img src="images/mir.png" alt="mir">
+            </div>
+            <div class="cardInputs">
+                <input class="cardNumber" type="text" placeholder="Номер карты">
+                <div class="cardDateCVV">
+                    <input type="text" placeholder="ММ/ГГ">
+                    <input type="text" placeholder="CVV/CVC">
+                </div>
+            </div>
+            <div class="payInfo">
+                <p class="finalPrice">9166₽</p>
+                <button class="finalPayButton"><a href="#"><img src="images/finalPayButton.png" alt=""></a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="logoContainerFooter">
+                <a href="index.html" class="logoFooter"><img src="images/logo.png" alt="logo"></a>
+            </div>
+
+            <nav>
+                <ul class="footerNav">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+            </nav>
+
+            <div class="socials">
+                <a href="https://www.instagram.com/"><img src="images/Instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="https://vk.com/"><img src="images/VK.png" alt="VK"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

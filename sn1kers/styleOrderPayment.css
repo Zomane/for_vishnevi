@@ -1,0 +1,84 @@
+.orderPaymentSection {
+    padding-top: 173px;
+    padding-bottom: 103px;
+}
+
+#orderPayment {
+    margin-top: 42px;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-family: Golos, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.orderPaymentSection button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.orderPaymentContainer {
+    width: 607px;
+    height: 425px !important;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.cardImages {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardInputs {
+    width: 508px !important;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardInputs input {
+    border: 2px solid black;
+    height: 53px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: Golos, sans-serif;
+}
+
+.cardNumber {
+    width: 508px !important;
+}
+
+
+.cardDateCVV {
+    margin-top: 43px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardDateCVV input {
+    text-align: center;
+    width: 211px !important;
+}
+
+.payInfo {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finalPrice {
+    color: black;
+}

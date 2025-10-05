@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
+.popular h2 {
+    margin-top: 62px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: Golos, sans-serif;
+    text-align: center;
+    color: white;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews  h2 {
+    margin-top: 62px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: Golos, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.reviews>.scrollReviews {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+/* стили дли раздела о компании */
+.aboutCompany h2 {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: Golos, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.frameAboutCompany {
+    width: 100vw; /* 100% ширины всего браузера (игнорирует родителя) */
+    height: 871px;
+    background-size: cover;
+    background-image: url("../images/backgroundAboutCompany.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 83px;
+}
+.frameAboutCompany>p {
+    color: white;
+    font-size: 65px;
+    font-family: "Days One", sans-serif;
+    flex-shrink: 0;         /* запрет сжатия */
+    min-width: max-content; /* минимальная ширина = ширина текста */
+}
+
+
+/* стили для футера */
+
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    justify-content: space-between;
+    padding-inline: 60px;
+    background-color: black;
+}
+
+.logoFooter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.logoContainerFooter {
+    width: 73.63px;
+    height: 63px;
+}
+
+.footerNav {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* убрали маркеры */
+    display: flex; /* горизонтальное расположение пунктов */
+    flex-direction: row;
+    gap: 65px; /* расстояние между пунктами */
+    align-items: center;
+}
+.footerNav a {
+    font-size: 20px;
+    font-family: Golos, sans-serif;
+    color: white;
+    text-decoration: none; /* убираем нижнее подчеркивание*/
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}

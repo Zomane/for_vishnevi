@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фото</title>
+    <link rel="stylesheet" href="stylesIndex/styleCardContainer.css">
+    <link rel="stylesheet" href="stylesIndex/styleMainContainer.css">
+    <link rel="stylesheet" href="stylesIndex/styleMenu.css">
+    <link rel="stylesheet" href="stylesIndex/styleReviewCard.css">
+    <link rel="stylesheet" href="styleCatalog&Photo.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-files/favicon-16x16.png">
+    <link rel="manifest" href="favicon-files/site.webmanifest">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="headerContainer">
+                <div class="logoContainer">
+                    <a href="index.html" class="logo"></a>
+                </div>
+
+                <nav>
+                    <ul class="menu">
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="photo.html">Фото</a></li>
+                        <li><a href="index.html#reviews">Отзывы</a></li>
+                        <li><a href="index.html#aboutCompany">О компании</a></li>
+                    </ul>
+                </nav>
+
+                <div class="actions">
+                    <a href="shoppingCart.html" class="basket"></a>
+                    <a href="#" class="login-button">Войти</a>
+                </div>
+
+            </div>
+
+            <div class="headerContainerMobile">
+                <div class="logoContainerMobile">
+                    <a href="index.html" class="logoMobile"></a>
+                </div>
+
+                <div class="burgerBtnContainer">
+                    <img src="imagesMobile/iconBurger.png" alt="burger">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="photo">
+                <h2 id="photo">Фото</h2>
+
+                <div class="carousel">
+                    <button class="arrowLeft"><img src="images/arrowLeft.png" alt="left"></button>
+
+                    <div class="photosContainer">
+                        <div class="slideWrapper"><img class="slide" src="images/photo1.png" alt="photo"></div>
+                        <div class="slideWrapper"><img class="slide" src="images/photo2.png" alt="photo"></div>
+                        <div class="slideWrapper"><img class="slide" src="images/photo3.png" alt="photo"></div>
+                    </div>
+
+                    <button class="arrowRight"><img src="images/arrowRight.png" alt="right"></button>
+                </div>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
+        <footer>
+            <div class="footerContainer">
+                <div class="logoContainerFooter">
+                    <a href="index.html" class="logoFooter"><img src="images/logo.png" alt="logo"></a>
+                </div>
+
+                <nav>
+                    <ul class="footerNav">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                    </ul>
+                </nav>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/"><img src="images/Instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="images/Facebook.png" alt="Facebook"></a>
+                    <a href="https://vk.com/"><img src="images/VK.png" alt="VK"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

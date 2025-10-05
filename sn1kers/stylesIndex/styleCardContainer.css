@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Скрываем скроллбар в WebKit-браузерах (Chrome, Safari, Edge) */
+body {
+    background: linear-gradient(45deg, #000000 0%, #300055 50%, #20003A 100%);
+    background-color: grey; /* временно, чтобы видеть контраст */
+    overflow: auto;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.headerIndex {
+    position: absolute !important;
+}
+
+.containerItems {
+    width: 1200px !important;
+    display: grid;  /* сделали выравнивание контейнеров по колонам */
+    grid-template-columns: repeat(3, 1fr); /* задали по 3 колонки, 1fr - одна колонка */
+    grid-template-rows: repeat(3, auto); /* выбрали ширину колонки и репитнули столько раз сколько нам нужно */
+    justify-items: center; /* выровняли карточки по центру каждой колонки */
+    margin-inline: 120px;
+    gap: 60px;
+} /* бтв если бы мы репитнули 4 раза у нас бы просто создались пустые колонки дополнительные*/
+
+.card {
+    width: 100%;
+    min-height: 378px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.card img {
+    width: 254px;
+    height: 220px;
+    margin-top: 40px;
+}
+
+.card>.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;  /* Используем gap для отступов между элементами */
+}
+.card .itemName {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.card .itemPrice {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* медиа запросы под мобильную версию */
+@media (max-width: 360px) {
+    .containerItems {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .card {
+        margin-inline: 0; /* убрали отступы слева и справа на мобилке */
+    }
+}

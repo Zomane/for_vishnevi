@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="stylesIndex/styleCardContainer.css">
+    <link rel="stylesheet" href="stylesIndex/styleMainContainer.css">
+    <link rel="stylesheet" href="stylesIndex/styleMenu.css">
+    <link rel="stylesheet" href="stylesIndex/styleReviewCard.css">
+    <link rel="stylesheet" href="styleBasket.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-files/favicon-16x16.png">
+    <link rel="manifest" href="favicon-files/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="logoContainer">
+                <a href="index.html" class="logo"></a>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="photo.html">Фото</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                    <li><a href="index.html#aboutCompany">О компании</a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <a href="shoppingCart.html" class="basket"></a>
+                <a href="#" class="login-button">Войти</a>
+            </div>
+
+        </div>
+
+        <div class="headerContainerMobile">
+            <div class="logoContainerMobile">
+                <a href="index.html" class="logoMobile"></a>
+            </div>
+
+            <div class="burgerBtnContainer">
+                <img src="imagesMobile/iconBurger.png" alt="burger">
+            </div>
+        </div>
+    </header>
+
+    <section class="basketSection">
+        <h2 id="basket">Корзина</h2>
+        <div class="basketContainer">
+            <div class="basketItem">
+                <img src="images/item%209.png" alt="item9">
+                <div class="basketItemBio">
+                    <div class="name&sizeContainer">
+                        <p class="basketItemName">«666» sweater</p>
+                        <p class="basketItemSize">Размер: S</p>
+                    </div>
+                    <p class="basketItemCount">1 X 6666₽</p>
+                </div>
+
+                <button class="crossButton"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="25.5453" y1="25.4595" x2="1.04023" y2="0.954448" stroke="black" stroke-width="2"/><line y1="-1" x2="34.6554" y2="-1" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 1 24.5049)" stroke="black" stroke-width="2"/></svg></button>
+
+                <div class="quantity">
+                    <button onclick="minusOne()" class="minus"><img src="images/button_minus.png" alt=""></button>
+                    <span class="quantityNumber">1</span>
+                    <button onclick="plusOne( )" class="plus"><img src="images/button_plus.png" alt=""></button>
+                </div>
+
+            </div>
+
+            <div class="basketItem">
+                <img src="images/item%201.png" alt="item1">
+                <div class="basketItemBio">
+                    <div class="name&sizeContainer">
+                        <p class="basketItemName">«HEART ATTACK» t-shirt</p>
+                        <p class="basketItemSize">Размер: S</p>
+                    </div>
+                    <p class="basketItemCount">1 X 2500₽</p>
+                </div>
+
+                <button class="crossButton"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="25.5453" y1="25.4595" x2="1.04023" y2="0.954448" stroke="black" stroke-width="2"/><line y1="-1" x2="34.6554" y2="-1" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 1 24.5049)" stroke="black" stroke-width="2"/></svg></button>
+
+                <div class="quantity">
+                    <button onclick="minusOne()" class="minus"><img src="images/button_minus.png" alt=""></button>
+                    <span class="quantityNumber">1</span>
+                    <button onclick="plusOne()" class="plus"><img src="images/button_plus.png" alt=""></button>
+                </div>
+
+            </div>
+
+            <div class="finalPriceAndPayButton">
+                <p class="finalPrice">Итого: 9166₽</p>
+                <button class="payButton"><a href="orderProcessing.html"><img src="images/payButton.png" alt=""></a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="logoContainerFooter">
+                <a href="index.html" class="logoFooter"><img src="images/logo.png" alt="logo"></a>
+            </div>
+
+            <nav>
+                <ul class="footerNav">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+            </nav>
+
+            <div class="socials">
+                <a href="https://www.instagram.com/"><img src="images/Instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="https://vk.com/"><img src="images/VK.png" alt="VK"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
